@@ -1,0 +1,17 @@
+---
+framework: mocha
+postMerge:
+  pattern:
+    - "./packages/enzyme-test-suite/build/*-spec.js"
+preMerge:
+  pattern:
+    - "./packages/enzyme-test-suite/build/*-spec.js"
+preRun:
+     command:
+        - npm install 
+        - npm run react 13
+        - npm run build
+postRun:
+     command:
+        - node --version
+version: 1.0
