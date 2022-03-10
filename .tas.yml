@@ -9,7 +9,6 @@ preMerge:
 preRun:
      command:
         - npm install 
-        - npm run react 13
         - npm run build
 postRun:
      command:
