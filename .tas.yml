@@ -15,4 +15,4 @@ postRun:
      command:
         - node --version
 version: 1.0
-configFile: mocha.opts
+configFile: ./test/mocha.opts
