@@ -9,6 +9,7 @@ preMerge:
 preRun:
      command:
         - npm install 
+        - npm i react
         - npm run build
 postRun:
      command:
